@@ -1,11 +1,67 @@
 <!DOCTYPE html>
-
-<html>
-    <head>
-        <title>123</title>
-    </head>
-
-    <body>
-        <h1 style="text-align: center;">123</h1>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <font color="red" face="黑体" size="7">我是字体标签</font>
+    <!--    特殊字符：-->
+    <!--    < &#45;&#45; &lt;-->
+    <!--    > &#45;&#45; &gt;-->
+    <!--    空格 &#45;&#45; &nbsp;-->
+    <br/>我是&lt;br&gt;&nbsp;&nbsp;标签
+    <!--    align对齐方式-->
+    <h1 align="left">标题1</h1>
+    <h2 align="center">标题2</h2>
+    <h3 align="right">标题3</h3>
+    <!--    超链接，_blank打开新窗口，_self在本窗口跳转-->
+    <a href="https://www.baidu.com/" target="_blank">百度</a>
+    <!--    列表：ul代表无序，ol标签代表有序-->
+    <ul type="none">
+        <li>a</li>
+        <li>b</li>
+        <li>c</li>
+    </ul>
+    <!--    alt属性设置当前指定路径找不到图片时，用来代替显示的文本-->
+    <img src="img/dog.jpg" width="100" height="150" border="1"/>
+    <!--    b标签是加粗，tr是行标签，th是表头标签,cellspacing内表格间距-->
+    <table align="center" border="1" width="300" height="300"cellspacing="1">
+        <tr>
+<!--            colspan跨列-->
+<!--                rowspan跨行-->
+            <td colspan="2"><b>1.1</b></td>
+            <th>1.2</th>
+        </tr>
+        <tr>
+            <td>2.1</td>
+            <td>2.2</td>
+            <td>2.3</td>
+        </tr>
+    </table>
+    <iframe src="iframe_test.html" name="a1"></iframe>
+    <a href="https://www.baidu.com/" target="a1">在内嵌窗口中打开百度</a>
+<!--    form标签表示表单-->
+    <form>
+        用户名称：<input type="text" value="默认值"><br/>
+        用户密码：<input type="password"><br/>
+<!--        单选-->
+        性别：<input type="radio" name="sex" checked="checked">男<input type="radio" name="sex">女<br/>
+<!--        多选-->
+        兴趣爱好：<input type="checkbox">java<input type="checkbox">c++<br>
+<!--        select下拉列表框-->
+        国际：<select>
+                <option>请选择国籍</option>
+                <option>中国</option>
+                <option>日本</option>
+             </select><br>
+        自我评价：<textarea rows="3" cols="10">默认值</textarea><br>
+        <input type="reset" value="这是一个重启按钮">
+        <input type="submit">
+        <input type="button" value="按钮">
+        <input type="file">
+<!--        隐藏域，不让用户看见，提交一些信息-->
+        <input type="hidden">
+    </form>
+</body>
 </html>
