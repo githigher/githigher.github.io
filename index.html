@@ -2,14 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+<<<<<<< Updated upstream
     <title>Titlee</title>
+=======
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+<!--    <style type="text/css">-->
+<!--        p{-->
+<!--            background-color: green;-->
+<!--        }-->
+<!--    </style>-->
+>>>>>>> Stashed changes
 </head>
 <body>
-    <font color="red" face="黑体" size="7">我是字体标签</font>
+    <font color="blue" face="黑体" size="7">我是字体标签</font>
     <!--    特殊字符：-->
-    <!--    < &#45;&#45; &lt;-->
-    <!--    > &#45;&#45; &gt;-->
-    <!--    空格 &#45;&#45; &nbsp;-->
+    <!--        <&lt;-->
+    <!--        >&gt;-->
+    <!--    空格&nbsp;-->
     <br/>我是&lt;br&gt;&nbsp;&nbsp;标签
     <!--    align对齐方式-->
     <h1 align="left">标题1</h1>
@@ -26,7 +36,7 @@
     <!--    alt属性设置当前指定路径找不到图片时，用来代替显示的文本-->
     <img src="img/dog.jpg" width="100" height="150" border="1"/>
     <!--    b标签是加粗，tr是行标签，th是表头标签,cellspacing内表格间距-->
-    <table align="center" border="1" width="300" height="300"cellspacing="1">
+    <table align="center" border="1" width="300" height="300"cellspacing="5">
         <tr>
 <!--            colspan跨列-->
 <!--                rowspan跨行-->
@@ -41,12 +51,18 @@
     </table>
     <iframe src="iframe_test.html" name="a1"></iframe>
     <a href="https://www.baidu.com/" target="a1">在内嵌窗口中打开百度</a>
-<!--    form标签表示表单-->
-    <form>
+<!--    form标签表示表单,用来把一系列的控件包围起来，然后再统一发送这些数据到目标-->
+<!--    action设置提交的服务器地址，method设置提交的方式get（默认值），post-->
+<!--    表单提交的时候，数据没有发送服务器的三种情况-->
+<!--    表单没有name值-->
+<!--    单选，复选都需要添加value-->
+<!--    表单项不在提交的form标签中-->
+<!--    post请求适用于表单信息多的，同时比get安全-->
+    <form action="https://192.168.42.1/" method="get">
         用户名称：<input type="text" value="默认值"><br/>
-        用户密码：<input type="password"><br/>
+        用户密码：<input name="password" type="password"><br/>
 <!--        单选-->
-        性别：<input type="radio" name="sex" checked="checked">男<input type="radio" name="sex">女<br/>
+        性别：<input type="radio" name="sex" checked="checked" value="boy">男<input type="radio" name="sex">女<br/>
 <!--        多选-->
         兴趣爱好：<input type="checkbox">java<input type="checkbox">c++<br>
 <!--        select下拉列表框-->
@@ -63,5 +79,11 @@
 <!--        隐藏域，不让用户看见，提交一些信息-->
         <input type="hidden">
     </form>
+<!--    <div>标签默认独占一行-->
+    <div style="border: 1px solid red;">div标签</div>
+<!--    <span>标签的长度是封装数据的长度-->
+    <span>span标签</span>
+<!--    p标签默认会在段落的上方或下方各空出一行来-->
+    <p>p标签</p>
 </body>
 </html>
